@@ -8,7 +8,6 @@ This Python script is a directory enumeration tool that helps you discover hidde
 
 - Enumerates directories and files on a target URL.
 - Checks the HTTP status code and page title to identify existing directories/files.
-- Generates a report of findings.
 
 ## Requirements
 
@@ -18,10 +17,10 @@ This Python script is a directory enumeration tool that helps you discover hidde
 ## Usage
 
 1. Clone the repository:
-    git clone https://github.com/vikrams-official/dirforce.git
+git clone https://github.com/vikrams-official/dirforce.git
    
 Install the required libraries:
-pip install urllib3 requests colorama beautifulsoup4
+-pip install urllib3 requests colorama beautifulsoup4
 
 Run the script:
 python dirforce.py
@@ -30,10 +29,15 @@ Example:
 python dirforce.py
 Enter target URL: https://example.com
 
-Status Code                             Request URL                              Response
-[+] Page Title                         https://example.com/                      Example Homepage
-[!] 404                                https://example.com/nonexistent           Not Found
-[+] Page Title                         https://example.com/about                 About Us
+##Note
+-Use appropriate protocol before domain name like http:// or https://
+
+Status Code | Request URL | Response
+--- | --- | ---
+[+] | [https://example.com/](https://example.com/) | Example Homepage
+[!] 404 | [https://example.com/nonexistent](https://example.com/nonexistent) | Not Found
+[+] | [https://example.com/about](https://example.com/about) | About Us
+
 ...
 
 Author
@@ -41,4 +45,4 @@ Vikram S
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Replace https://github.com/vikrams-official/dirforce.git with the actual URL of your GitHub repository where you plan to store this code.
+https://github.com/vikrams-official/dirforce.git 
